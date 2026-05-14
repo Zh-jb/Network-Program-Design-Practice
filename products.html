@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>商品展示-拾光志物</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+		<link rel="stylesheet" href="fonts/css/all.min.css">
+		<link rel="stylesheet" href="css/base.css" type="text/css"/>
+		<link rel="stylesheet" href="css/index.css" type="text/css"/>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="page-wrap header-wrap">
+				<a class="site-logo" href="index.html"><img src="img/拾光志物logo.png" alt="拾光志物"></a>
+				<div class="header-service">
+					<div class="service-item"><i class="fas fa-calendar-day"></i><strong id="todayText">课程实践</strong><span>商品展示</span></div>
+					<div class="service-item"><i class="fas fa-box-open"></i><strong>全部素材</strong><span>分类呈现</span></div>
+					<a class="cart-entry" href="cart.html"><i class="fas fa-shopping-cart"></i>购物车<em id="cartCount">0</em></a>
+				</div>
+			</div>
+		</header>
+
+		<nav class="main-nav">
+			<div class="page-wrap">
+				<a href="index.html">主页</a>
+				<a href="products.html?cat=family">家人志</a>
+				<a href="products.html?cat=books">书香志</a>
+				<a href="products.html?cat=friends">挚友志</a>
+				<a href="products.html?cat=travel">山河志</a>
+				<a href="products.html?cat=growth">成长志</a>
+				<a href="login.html">注册登录</a>
+				<a href="orders.html">订单管理</a>
+			</div>
+		</nav>
+
+		<main class="goods-floor">
+			<div class="page-wrap">
+				<div class="floor-title">
+					<h2>商品展示</h2>
+				</div>
+				<div class="goods-tools">
+					<div id="categoryTabs" class="category-tabs">
+						<button class="active" type="button" data-filter="all">全部</button>
+						<button type="button" data-filter="family">家人志</button>
+						<button type="button" data-filter="books">书香志</button>
+						<button type="button" data-filter="friends">挚友志</button>
+						<button type="button" data-filter="travel">山河志</button>
+						<button type="button" data-filter="growth">成长志</button>
+					</div>
+					<div class="search-box">
+						<i class="fas fa-search"></i>
+						<input id="searchInput" type="text" placeholder="搜索商品名称、栏目或图片文件名">
+					</div>
+				</div>
+				<div id="productGrid" class="product-grid"></div>
+				<p id="emptyTip" class="empty-tip">没有找到匹配的纪念物，请更换分类或关键词。</p>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="page-wrap footer-wrap">
+				<p><i class="fas fa-phone-volume"></i> 咨询电话：19735102024</p>
+				<p><i class="fas fa-envelope"></i> 电子邮件：zhaojiangbo082@gmail.com</p>
+				<p class="course-info">网络程序设计实践课程作业 · 赵江波 · 2026.5</p>
+			</div>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

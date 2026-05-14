@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>注册登录-拾光志物</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+		<link rel="stylesheet" href="fonts/css/all.min.css">
+		<link rel="stylesheet" href="css/base.css" type="text/css"/>
+		<link rel="stylesheet" href="css/index.css" type="text/css"/>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="page-wrap header-wrap">
+				<a class="site-logo" href="index.html"><img src="img/拾光志物logo.png" alt="拾光志物"></a>
+				<div class="header-service">
+					<div class="service-item"><i class="fas fa-calendar-day"></i><strong id="todayText">课程实践</strong><span>表单验证</span></div>
+					<div class="service-item"><i class="fas fa-user-check"></i><strong>注册登录</strong><span>本地演示</span></div>
+					<a class="cart-entry" href="cart.html"><i class="fas fa-shopping-cart"></i>购物车<em id="cartCount">0</em></a>
+				</div>
+			</div>
+		</header>
+
+		<nav class="main-nav">
+			<div class="page-wrap">
+				<a href="index.html">主页</a>
+				<a href="products.html?cat=family">家人志</a>
+				<a href="products.html?cat=books">书香志</a>
+				<a href="products.html?cat=friends">挚友志</a>
+				<a href="products.html?cat=travel">山河志</a>
+				<a href="products.html?cat=growth">成长志</a>
+				<a class="active" href="login.html">注册登录</a>
+				<a href="orders.html">订单管理</a>
+			</div>
+		</nav>
+
+		<main class="form-page page-wrap">
+			<div class="form-card">
+				<h2>会员登录</h2>
+				<form id="loginForm">
+					<label>账号<input type="text" id="loginName" placeholder="请输入账号"></label>
+					<label>密码<input type="password" id="loginPwd" placeholder="请输入密码"></label>
+					<button type="submit">登录</button>
+					<p id="loginMsg" class="form-msg"></p>
+				</form>
+			</div>
+			<div class="form-card">
+				<h2>新用户注册</h2>
+				<form id="registerForm">
+					<label>账号<input type="text" id="regName" placeholder="4-16 位账号"></label>
+					<label>邮箱<input type="text" id="regEmail" placeholder="example@mail.com"></label>
+					<label>密码<input type="password" id="regPwd" placeholder="至少 6 位"></label>
+					<label>确认密码<input type="password" id="regPwd2" placeholder="再次输入密码"></label>
+					<button type="submit">注册</button>
+					<p id="regMsg" class="form-msg"></p>
+				</form>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="page-wrap footer-wrap">
+				<p><i class="fas fa-phone-volume"></i> 咨询电话：19735102024</p>
+				<p><i class="fas fa-envelope"></i> 电子邮件：zhaojiangbo082@gmail.com</p>
+				<p class="course-info">网络程序设计实践课程作业 · 赵江波 · 2026.5</p>
+			</div>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

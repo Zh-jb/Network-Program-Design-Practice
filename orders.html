@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>订单管理-拾光志物</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+		<link rel="stylesheet" href="fonts/css/all.min.css">
+		<link rel="stylesheet" href="css/base.css" type="text/css"/>
+		<link rel="stylesheet" href="css/index.css" type="text/css"/>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="page-wrap header-wrap">
+				<a class="site-logo" href="index.html"><img src="img/拾光志物logo.png" alt="拾光志物"></a>
+				<div class="header-service">
+					<div class="service-item"><i class="fas fa-calendar-day"></i><strong id="todayText">课程实践</strong><span>订单管理</span></div>
+					<div class="service-item"><i class="fas fa-clipboard-list"></i><strong>订单记录</strong><span>本地保存</span></div>
+					<a class="cart-entry" href="cart.html"><i class="fas fa-shopping-cart"></i>购物车<em id="cartCount">0</em></a>
+				</div>
+			</div>
+		</header>
+
+		<nav class="main-nav">
+			<div class="page-wrap">
+				<a href="index.html">主页</a>
+				<a href="products.html?cat=family">家人志</a>
+				<a href="products.html?cat=books">书香志</a>
+				<a href="products.html?cat=friends">挚友志</a>
+				<a href="products.html?cat=travel">山河志</a>
+				<a href="products.html?cat=growth">成长志</a>
+				<a href="login.html">注册登录</a>
+				<a class="active" href="orders.html">订单管理</a>
+			</div>
+		</nav>
+
+		<main class="orders-page page-wrap">
+			<div class="floor-title">
+				<h2>订单管理</h2>
+				<p>购物车提交后会在本页面生成订单记录，使用 localStorage 保存。</p>
+			</div>
+			<div id="orderList" class="order-list"></div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="page-wrap footer-wrap">
+				<p><i class="fas fa-phone-volume"></i> 咨询电话：19735102024</p>
+				<p><i class="fas fa-envelope"></i> 电子邮件：zhaojiangbo082@gmail.com</p>
+				<p class="course-info">网络程序设计实践课程作业 · 赵江波 · 2026.5</p>
+			</div>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>
